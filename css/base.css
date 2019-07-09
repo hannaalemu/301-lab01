@@ -6,30 +6,29 @@ header {
     width : 480px;
     height : 75px;
     background-color: green;
-    text-align: center;
-    
+    vertical-align: middle;
+    line-height: 75px;
 }
 aside {
     float: left;
     width : 480px;
     height: 150px;
     background-color: red;
-    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
 
 }
 #first{
     float: left;
     width : 480px;
     height : 250px;
-    margin : auto;
-    text-align: center;
 }
 .first{
-    
-    text-align: center;
     height: 125px;
     margin: auto;
     clear: left;
+    vertical-align: middle;
+    line-height: 125px;
 }
 #first > div:first-child{
     background-color: aqua;
@@ -48,6 +47,8 @@ aside {
     width : 240px;
     height: 250px;
     float: left;
+    vertical-align: middle;
+    line-height: 250px;
 }
 #second > div:first-child{
     background-color: rgb(19, 202, 19);
@@ -68,6 +69,8 @@ footer{
     height : 80px;
     text-align: center;
     float: left;
+    vertical-align: middle;
+    line-height: 80px;
 }
 }
 
@@ -76,17 +79,22 @@ footer{
     body{
         margin : auto;
         width: 960px;
+        text-align: center;
     }
     header{
         height:100px;
         width:960px;
         background-color: rgba(48, 241, 241, 0.363);
+        vertical-align: middle;
+        line-height: 100px;
     }
     aside{
         float: left;
         height:600px;
         width:200px;
         background-color: rgb(104, 79, 49);
+        vertical-align: middle;
+        line-height: 600px;
     }
 
     #first{
@@ -99,6 +107,9 @@ footer{
         width:380px;
         float: left;
         height: 200px;
+        vertical-align: middle;
+        line-height: 200px;
+
     }
     #first > div:first-child{
         background-color: rgb(155, 45, 182);
@@ -117,6 +128,8 @@ footer{
         width: 190px;
         height:250px;
         float: left;
+        vertical-align: middle;
+        line-height: 250px;
     }
     #second > div:first-child{
         background-color: rgb(50, 142, 185);
@@ -137,5 +150,7 @@ footer{
         height: 150px;
         float: left;
         background-color: yellow;
+        vertical-align: middle;
+        line-height: 150px;
     }
 }
