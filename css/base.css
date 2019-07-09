@@ -73,6 +73,10 @@ footer{
 
 @media(min-width : 481px){
 
+    body{
+        margin : auto;
+        width: 960px;
+    }
     header{
         height:100px;
         width:960px;
