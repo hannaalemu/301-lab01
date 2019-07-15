@@ -1,0 +1,171 @@
+@media (max-width : 480px){
+    body{
+        text-align: center;
+    }
+    header {
+        width : 480px;
+        height : 75px;
+        background-color: green;
+        vertical-align: middle;
+        line-height: 75px;
+    }
+    aside {
+        position:flex;
+        width : 480px;
+        height: 150px;
+        background-color: red;
+        vertical-align: middle;
+        line-height: 150px;
+    
+    }
+    #first{
+        display: flex;
+        flex-direction: column;
+        width : 480px;
+        height : 250px;
+    }
+    .first{
+        height: 125px;
+        width: 480px;
+        margin: auto;
+        vertical-align: middle;
+        line-height: 125px;
+    }
+    #first > div:first-child{
+        background-color: aqua;
+    }
+    #first > div:last-child{
+        background-color: purple;
+    }
+    #second{
+        display:flex;
+        flex-direction: row;
+        width : 480px;
+        height : 250px;
+        margin : auto;
+        text-align: center;
+    }
+    .second{
+        width : 240px;
+        height: 250px;
+        vertical-align: middle;
+        line-height: 250px;
+    }
+    #second > div:first-child{
+        background-color: rgb(19, 202, 19);
+    
+    }
+    #second > div:last-child{
+        background-color: grey;
+    }
+    #third{
+        display:flex;
+        flex-direction: row;
+        width : 480px;
+        height : 250px;
+        margin : auto;
+        text-align: center;
+    
+    }
+    .third{
+        width : 240px;
+        height: 250px;
+        vertical-align: middle;
+        line-height: 250px;
+    }
+    #third > div:first-child{
+        background-color: rgb(206, 84, 90);
+    }
+    #third > div:last-child{
+        background-color: rgb(211, 136, 38);
+    }
+    footer{
+        background-color: yellow;
+        width : 480px;
+        height : 80px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 80px;
+    }
+    }
+    
+    @media(min-width : 481px){
+    
+        body{
+            margin : auto;
+            width: 960px;
+            text-align: center;
+        }
+        header{
+            height:100px;
+            width:960px;
+            background-color: rgba(48, 241, 241, 0.363);
+            vertical-align: middle;
+            line-height: 100px;
+        }
+        aside{
+            float: left;
+            height:600px;
+            width:200px;
+            background-color: rgb(104, 79, 49);
+            vertical-align: middle;
+            line-height: 600px;
+        }
+    
+        #first{
+            width:760px;
+            height : 200px;
+            float: left;
+        }
+    
+        .first{
+            width:380px;
+            float: left;
+            height: 200px;
+            vertical-align: middle;
+            line-height: 200px;
+    
+        }
+        #first > div:first-child{
+            background-color: rgb(155, 45, 182);
+        }
+        #first > div:last-child{
+            background-color: rgb(99, 218, 135);
+        }
+    
+    
+        #second{
+            width : 760px;
+            height : 250px;
+            float: left;
+        }
+        .second{
+            width: 190px;
+            height:250px;
+            float: left;
+            vertical-align: middle;
+            line-height: 250px;
+        }
+        #second > div:first-child{
+            background-color: rgb(50, 142, 185);
+        
+        }
+        #second > div:last-child{
+            background-color: rgb(219, 115, 115);
+        }
+        #second > div:nth-child(2){
+            background-color: rgb(199, 184, 49);
+        }
+        #second > div:nth-child(3){
+            background-color: rgb(76, 19, 94);
+        }
+    
+        footer{
+            width: 760px;
+            height: 150px;
+            float: left;
+            background-color: yellow;
+            vertical-align: middle;
+            line-height: 150px;
+        }
+    }

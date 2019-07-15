@@ -1,79 +1,94 @@
 @media (max-width : 480px){
-body{
-    text-align: center;
-}
-header {
-    width : 480px;
-    height : 75px;
-    background-color: green;
-    vertical-align: middle;
-    line-height: 75px;
-}
-aside {
-    float: left;
-    width : 480px;
-    height: 150px;
-    background-color: red;
-    vertical-align: middle;
-    line-height: 150px;
-
-}
-#first{
-    float: left;
-    width : 480px;
-    height : 250px;
-}
-.first{
-    height: 125px;
-    margin: auto;
-    clear: left;
-    vertical-align: middle;
-    line-height: 125px;
-}
-#first > div:first-child{
-    background-color: aqua;
-}
-#first > div:last-child{
-    background-color: purple;
-}
-#second{
-    width : 480px;
-    float: left;
-    height : 500px;
-    margin : auto;
-    text-align: center;
-}
-.second{
-    width : 240px;
-    height: 250px;
-    float: left;
-    vertical-align: middle;
-    line-height: 250px;
-}
-#second > div:first-child{
-    background-color: rgb(19, 202, 19);
-
-}
-#second > div:last-child{
-    background-color: grey;
-}
-#second > div:nth-child(2){
-    background-color: rgb(206, 84, 90);
-}
-#second > div:nth-child(3){
-    background-color: rgb(211, 136, 38);
-}
-footer{
-    background-color: yellow;
-    width : 480px;
-    height : 80px;
-    text-align: center;
-    float: left;
-    vertical-align: middle;
-    line-height: 80px;
-}
-}
-
+    body{
+        text-align: center;
+    }
+    header {
+        width : 480px;
+        height : 75px;
+        background-color: green;
+        vertical-align: middle;
+        line-height: 75px;
+    }
+    aside {
+        position:flex;
+        width : 480px;
+        height: 150px;
+        background-color: red;
+        vertical-align: middle;
+        line-height: 150px;
+    
+    }
+    #first{
+        display: flex;
+        flex-direction: column;
+        width : 480px;
+        height : 250px;
+    }
+    .first{
+        height: 125px;
+        width: 480px;
+        margin: auto;
+        vertical-align: middle;
+        line-height: 125px;
+    }
+    #first > div:first-child{
+        background-color: aqua;
+    }
+    #first > div:last-child{
+        background-color: purple;
+    }
+    #second{
+        display:flex;
+        flex-direction: row;
+        width : 480px;
+        height : 250px;
+        margin : auto;
+        text-align: center;
+    }
+    .second{
+        width : 240px;
+        height: 250px;
+        vertical-align: middle;
+        line-height: 250px;
+    }
+    #second > div:first-child{
+        background-color: rgb(19, 202, 19);
+    
+    }
+    #second > div:last-child{
+        background-color: grey;
+    }
+    #third{
+        display:flex;
+        flex-direction: row;
+        width : 480px;
+        height : 250px;
+        margin : auto;
+        text-align: center;
+    
+    }
+    .third{
+        width : 240px;
+        height: 250px;
+        vertical-align: middle;
+        line-height: 250px;
+    }
+    #third > div:first-child{
+        background-color: rgb(206, 84, 90);
+    }
+    #third > div:last-child{
+        background-color: rgb(211, 136, 38);
+    }
+    footer{
+        background-color: yellow;
+        width : 480px;
+        height : 80px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 80px;
+    }
+    }
+    
 @media(min-width : 481px){
 
     body{
@@ -100,7 +115,8 @@ footer{
     #first{
         width:760px;
         height : 200px;
-        float: left;
+        display: flex;
+        flex-direction: row;
     }
 
     .first{
@@ -117,17 +133,20 @@ footer{
     #first > div:last-child{
         background-color: rgb(99, 218, 135);
     }
-
+    #last{
+        display: flex;
+        flex-direction: row;
+    }
 
     #second{
         width : 760px;
         height : 250px;
-        float: left;
+        display: flex;
+        flex-direction: row;
     }
     .second{
         width: 190px;
         height:250px;
-        float: left;
         vertical-align: middle;
         line-height: 250px;
     }
@@ -138,10 +157,22 @@ footer{
     #second > div:last-child{
         background-color: rgb(219, 115, 115);
     }
-    #second > div:nth-child(2){
+    #third{
+        width : 760px;
+        height : 250px;
+        display: flex;
+        flex-direction: row;
+    }
+    .third{
+        width: 190px;
+        height:250px;
+        vertical-align: middle;
+        line-height: 250px;
+    }
+    #third > div:first-child{
         background-color: rgb(199, 184, 49);
     }
-    #second > div:nth-child(3){
+    #third > div:last-child{
         background-color: rgb(76, 19, 94);
     }
 
